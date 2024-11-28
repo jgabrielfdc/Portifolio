@@ -1,0 +1,16 @@
+
+.bg-ocean{
+  background: 	linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
+  color:#FFF;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(50px); /* Desloca o elemento 50px para a direita */
+  transition: all 1.2s ease; /* Adiciona uma transição suave */
+}
+
+.fade-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
