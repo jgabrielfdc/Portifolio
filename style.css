@@ -14,3 +14,12 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+.uk-animation-duration-5{
+  animation-duration: 1s !important;
+}
+
+.text-aqua{
+  color:aqua;
+  transition:0.5s all;
+}
