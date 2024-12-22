@@ -76,9 +76,9 @@
     </section>
     <section id="habilidades" class="container-fluid bg-success" style="height:200px">
         <article class="row bg-parallax" style="background-image: url(assets/imgs/paisagem.jpeg); background-repeat: no-repeat; background-size: cover;">
-            <div class="col-5" >
-                <div id="resumo_skills" class="bg-dark m-5 w-100 rounded pb-3">
-                    
+            <div class="col-5 h-100">
+                <div id="resumo_skills" class="bg-dark m-5 w-100 rounded" style="min-height: 300px;">
+                    <p class="text-light bg-secondary p-3 rounded-top h3">Habilidades</p>
                 </div>
             </div>
             <div class="col-7 bg-intro-right">
@@ -109,21 +109,23 @@
                             </div>
                         </li>
                         <li id="front" data-size="small">
-                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded">
+                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="css">
                                 <canvas width="40" height="60"></canvas>
                                 <div class="uk-position-center h1 pb-3"><i class="fa-brands fa-css3 fa-2xl uk-text-secondary"></i></div>
                                 <div class="uk-position-bottom-center p-1 h4">CSS3</div>
                             </div>
                         </li>
+
                         <li id="front" data-size="small">
-                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded">
+                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="bootstrap">
                                 <canvas width="40" height="60"></canvas>
                                 <div class="uk-position-center h1 pb-3"><i class="fa-brands fa-bootstrap fa-2xl uk-text-secondary"></i></div>
                                 <div class="uk-position-bottom-center h4 p-1">Bootstrap</div>
                             </div>
                         </li>
+
                         <li id="back" data-size="small">
-                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded">
+                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="php">
                                 <canvas width="40" height="60"></canvas>
                                 <div class="uk-position-center h1 pb-3"><i class="fa-brands fa-php fa-2xl uk-text-secondary"></i></div>
                                 <div class="uk-position-bottom-center h4 p-1">PHP</div>
@@ -131,7 +133,7 @@
                         </li>
 
                         <li id="back" class="front" data-size="small">
-                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded">
+                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="javascript">
                                 <canvas width="40" height="60"></canvas>
                                 <div class="uk-position-center h1 pb-3"><i class="fa-brands fa-js fa-2xl uk-text-secondary"></i></div>
                                 <div class="uk-position-bottom-center h4 p-1">JavaScript</div>
@@ -139,7 +141,7 @@
                         </li>
 
                         <li id="back" data-size="small">
-                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded">
+                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="python">
                                 <canvas width="40" height="60"></canvas>
                                 <div class="uk-position-center h1 pb-3"><i class="fa-brands fa-python fa-2xl uk-text-secondary"></i></div>
                                 <div class="uk-position-bottom-center h4 p-1">Python</div>
@@ -147,18 +149,26 @@
                         </li>
                         
                         <li id="back" data-size="small">
-                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded">
+                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="sql">
                                 <canvas width="40" height="60"></canvas>
                                 <div class="uk-position-center pb-3"><p class="uk-text-medium uk-text-secondary" uk-icon="icon: database; ratio:3"></p></div>
-                                <div class="uk-position-bottom-center h4 p-1">SQL</div>
+                                <div class="uk-position-bottom-center h4 p-1">MySQL</div>
                             </div>
                         </li>
                         
                         <li id="front" data-size="small">
-                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded">
+                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="uikit">
                                 <canvas width="40" height="60"></canvas>
                                 <div class="uk-position-center pb-3"><p class="uk-text-medium uk-text-secondary" uk-icon="icon: uikit; ratio:3"></p></div>
                                 <div class="uk-position-bottom-center h4 p-1">UIKit</div>
+                            </div>
+                        </li>
+
+                        <li id="back" data-size="small">
+                            <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="csharp">
+                                <canvas width="40" height="60"></canvas>
+                                <div class="uk-position-center h1 pb-3"><i class="fa-brands fa-c  fa-xl uk-text-secondary"></i><i class="fa-brands fa-hashtag uk-text-secondary"></i></div>
+                                <div class="uk-position-bottom-center h4 p-1">C#</div>
                             </div>
                         </li>
                         
@@ -181,6 +191,8 @@
     <!--Jquery UI Js-->
     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"
         integrity="sha256-u0L8aA6Ev3bY2HI4y0CAyr9H8FRWgX4hZ9+K7C2nzdc=" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
     <script src="assets/js/habilidades.js"></script>
 </body>
