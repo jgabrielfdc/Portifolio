@@ -1,9 +1,45 @@
-
-.bg-ocean{
-  background: 	linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
-  color:#FFF;
+/*?=-=-=-=-=-=-= Fontes =-=-=-=-=-=-=-*/
+@font-face {
+  font-family: horizon;
+  src: url(Horizon-nMeM.ttf);
+}
+@font-face {
+  font-family: valorant;
+  src: url(Valorant\ Font.ttf);
+}
+@font-face {
+  font-family: zelda;
+  src: url(The\ Wild\ Breath\ of\ Zelda.otf);
+}
+@font-face {
+  font-family: tecno;
+  src: url(Stark.otf);
 }
 
+.font-horizon{
+  font-family: horizon;
+}
+.font-zelda{
+  font-family: zelda;
+}
+.font-valorant{
+  font-family: valorant;
+}
+.font-tecno{
+  font-family: tecno;
+}
+
+/*?=-=-=-=-=-=-= Backgrounds =-=-=-=-=-=-=-*/
+
+.bg-parallax{
+  background-repeat: repeat-x;
+   background-size:contain;
+     background-attachment: fixed;
+}
+
+.bg-ocean{
+  background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
+}
 .fade-right {
   opacity: 0;
   transform: translateX(50px); /* Desloca o elemento 50px para a direita */
@@ -23,3 +59,40 @@
   color:aqua;
   transition:0.5s all;
 }
+
+/*?=-=-=-=-=-=-= Introdução =-=-=-=-=-=-=-*/
+
+@media(max-width:600px){
+  .bg-intro{
+    background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
+  }
+  .img-hidden{
+    display: none;
+  }
+}
+@media (min-width:600px){
+  .bg-intro{
+    background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
+  }
+  .img-hidden{
+    display: none;
+  }
+}
+@media(min-width:768px){
+  .bg-intro{
+    background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
+  }
+
+  .img-hidden{
+    display: none;
+  }
+}
+@media(min-width:992px){
+  .bg-intro{
+    background:linear-gradient(to right,#2F2C40,#454259,rgba(40, 76, 105),rgb(46, 78, 104),rgba(118, 134, 166, 0.7),transparent,transparent) !important;
+  }
+  .img-hidden{
+    display:inline-block;
+  }
+}
+
