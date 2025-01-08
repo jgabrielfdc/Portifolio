@@ -1,5 +1,5 @@
 function skill(archive){
-    $('#resumo_skills').load(skill("assets/components/"+archive+"_content.html"))
+    $('#resumo_skills').load("assets/components/"+archive+"_content.html");
     $('#resumo_skills').addClass("pb-3")
 }
 
