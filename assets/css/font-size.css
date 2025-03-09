@@ -1,0 +1,16 @@
+/*?=-=-=-=-=-=-= Fontes =-=-=-=-=-=-=-*/
+@font-face {
+    font-family: valorant;
+    src: url(../fonts/Valorant\ Font.ttf);
+  }
+  @font-face {
+    font-family: tecno;
+    src: url(../fonts/Stark.otf);
+  }
+  
+  .font-valorant{
+    font-family: valorant;
+  }
+  .font-tecno{
+    font-family: tecno;
+  }

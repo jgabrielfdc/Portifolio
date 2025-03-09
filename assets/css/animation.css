@@ -1,0 +1,16 @@
+/*?=-=-=-=-=-=-= Animações =-=-=-=-=-=-=-*/
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(50px); /* Desloca o elemento 50px para a direita */
+    transition: all 1.2s ease; /* Adiciona uma transição suave */
+  }
+  
+.fade-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+.uk-animation-duration-2{
+    animation-duration: 2s !important;
+}

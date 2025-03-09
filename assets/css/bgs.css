@@ -1,0 +1,17 @@
+/*?=-=-=-=-=-=-= Backgrounds =-=-=-=-=-=-=-*/
+
+.bg-parallax{
+  background-repeat: repeat-x;
+   background-size:contain;
+     background-attachment: fixed;
+}
+
+.bg-ocean{
+  background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
+}
+
+
+.text-aqua{
+  color:aqua;
+  transition:0.5s all;
+}
