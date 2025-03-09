@@ -1,0 +1,92 @@
+/* normalize.css - Reset de estilos para consistência entre navegadores */
+
+/* Corrige o box-sizing para incluir padding e border no tamanho do elemento */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove estilos padrões de listas */
+  ul, ol {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /* Remove estilos padrões de links */
+  a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+  }
+  
+  /* Garante que os elementos usem a fonte e tamanho corretos */
+  html {
+    overflow-x:hidden;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    scroll-behavior: smooth;
+  }
+  
+  /* Define uma tipografia mais consistente */
+  body {
+    font-family: sans-serif;
+    text-rendering: optimizeLegibility;
+    background-color: #fff;
+    color: #000;
+    width:100%;
+  }
+  
+  /* Removendo estilos padrão de botões e inputs */
+  button, input, textarea, select {
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+  }
+  
+  /* Ajusta inputs para comportamento consistente */
+  input, textarea {
+    width: 100%;
+  }
+  
+  /* Garante que imagens e mídia sejam responsivos */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Melhora a legibilidade do texto em elementos bloqueados */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* Ajusta tabelas para evitar overflow */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Remove estilos padrão para elementos interativos */
+  button {
+    cursor: pointer;
+  }
+  
+  /* Remove aparência padrão do campo de pesquisa */
+  input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  /* Define um comportamento previsível para elementos ocultos */
+  [hidden] {
+    display: none !important;
+  }
+  

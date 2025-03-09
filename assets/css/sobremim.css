@@ -1,0 +1,53 @@
+/*?=-=-=-=-=-=-= Introdução =-=-=-=-=-=-=-*/
+
+@media (max-width: 378px) {
+}
+
+.sobre-mim__container {
+  .contato__container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.25rem;
+    border-top: var(--bs-border-width) var(--bs-border-style)
+      var(--bs-border-color);
+  }
+
+  .contato__container {
+    .contato__content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contato__content {
+      .contato__contatos {
+        gap: 1rem;
+        display: flex;
+        width: 100%;
+        align-items: center;
+      }
+
+      .contato__curriculo {
+        width: 50%;
+        height: 100%;
+      }
+
+      .contato__curriculo{
+        a{
+            border-radius:var(--bs-border-radius);}
+      }
+
+      .contato__contatos {
+        a {
+            border-radius: 50%;
+            padding: 0.5rem 1rem;
+        }
+
+      }
+
+    }
+
+  }
+
+}

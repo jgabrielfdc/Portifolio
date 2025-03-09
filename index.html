@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -26,7 +25,13 @@
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
 
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="assets/css/bgs.css">
     <link rel="stylesheet" href="assets/css/font-size.css">
+    <link rel="stylesheet" href="assets/css/intro.css">
+    <link rel="stylesheet" href="assets/css/sobremim.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
 
     <title>Portifólio / João Gabriel \ Dev FullStack</title>
 </head>
@@ -51,7 +56,7 @@
         </article>
     </section>
 
-    <section id="sobre_mim" class="container-fluid w-100 bg-light px-sm-5 py-sm-3" class="height:600px">
+    <section id="sobre_mim" class="sobre-mim__container container-fluid w-100 bg-light px-sm-5 py-sm-3" class="height:600px">
         <article class="row w-100 text-dark">
             <div class="col-md-7 col-sm-12 h-100 px-5">
                 <div class="font-tecno h4 text-secondary">
@@ -73,25 +78,34 @@
                     </div>
                 </div>
                
-                <div class="col-md-12 border-top mt-1 mb-3 px-sm-3 py-3">
-                    <div class="d-flex justify-content-between w-100">
-                        <div class="d-flex gap-3 align-items-center w-100">
-                            <a href="https://github.com/jgabrielfdc" target="_blank"
-                                class="uk-button-secondary rounded-circle px-3 py-2"><i class="fab fa-github"></i></a>
+                <div class="contato__container col-md-12 px-sm-3" >
+                    
+                    <div class="contato__content">
+                        <div class="contato__contatos">
                             
-                            <a href="https://wa.me/5562985854951?text=Olá, Como posso lhe ajudar ?" target="_blank"
-                                class="uk-button-default bg-success text-light rounded-circle px-3 py-2"><i class="fab fa-whatsapp"></i></a>
-                            
-                            <a href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-farias-de-carvalho-1ab8b8299/"
-                                class="uk-button-default bg-info text-light rounded-circle px-3 py-2" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                        <div class="w-50 h-100">
-                            <a href="assets/Curriculo Jg.pdf" target="_blank" class="uk-button-default bg-warning px-5 rounded d-flex align-content-center text-decoration-none py-md-3">
-                            <span class="my-auto mx-2 font-tecno h5">Baixar Cv</span>
-                            <i class="my-auto fa-solid fa-download"></i>
+                            <a href="https://github.com/jgabrielfdc" target="_blank" class="uk-button-secondary ">
+                                <i class="fab fa-github"></i>
                             </a>
+                            
+                            <a href="https://wa.me/5562985854951?text=Olá, Como posso lhe ajudar ?" target="_blank" class="uk-button-default bg-success text-light ">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-farias-de-carvalho-1ab8b8299/" class="uk-button-default bg-info text-light " target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        
+                        </div>
+                        <div class="contato__curriculo">
+
+                            <a href="assets/Curriculo Jg.pdf" target="_blank" class="uk-button-default bg-warning px-5 rounded d-flex align-content-center text-decoration-none py-md-3">
+                                <span class="my-auto mx-2 font-tecno h5">Baixar Cv</span>
+                                <i class="my-auto fa-solid fa-download"></i>
+                            </a>
+                            
                         </div>
                     </div>
+
                 </div>
 
             </div>
