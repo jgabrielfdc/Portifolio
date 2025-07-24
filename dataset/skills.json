@@ -1,0 +1,187 @@
+{
+    "skills":[
+            {
+                "id":1,
+                 "icon":{
+                    "name":"html5",
+                    "type":"bootstrap"
+                },
+                "title":"HTML",
+                "experiencia":"2 Anos e 8 Meses",
+                "certificados":[
+                {
+                        "title":"Certificado Web Completo",
+                        "link":"https://drive.google.com/file/d/1u_o01z6vXq2BCbk_zGLyvTNaLFQsAjAy/view?usp=sharing"
+                    },
+                    {
+                        "title":"Certificado Introdução Web",
+                        "link":"https://drive.google.com/file/d/1ND1HiS9-zc3lUqzOGdUsF41Qt7MXIDi_/view?usp=sharing"
+                    }
+                ],
+                "tipo":"front"
+        
+            },
+            {
+                "id":2,
+                "title":"CSS",
+                 "icon":{
+                    "name":"css3",
+                    "type":"bootstrap"
+                },
+                "experiencia":"2 Anos e 8 Meses",
+                "certificados":[
+                    {
+                        "title":"Certificado Web Completo",
+                        "link":"https://drive.google.com/file/d/1u_o01z6vXq2BCbk_zGLyvTNaLFQsAjAy/view?usp=sharing"
+                    },
+                    {
+                        "title":"Certificado Introdução Web",
+                        "link":"https://drive.google.com/file/d/1ND1HiS9-zc3lUqzOGdUsF41Qt7MXIDi_/view?usp=sharing"
+                    }
+                ],
+                "tipo":"front"
+            },
+            {   
+                "id":3,
+                 "icon":{
+                    "name":"php",
+                    "type":"bootstrap"
+                },
+                "title":"PHP",
+                "experiencia":"1 Ano e 5 Meses",
+                "certificados":[
+                    {
+                        "title":"Certificado Web Completo",
+                        "link":"https://drive.google.com/file/d/1u_o01z6vXq2BCbk_zGLyvTNaLFQsAjAy/view?usp=sharing"
+                    },
+                    {
+                        "title":"Certificado Introdução Web",
+                        "link":"https://drive.google.com/file/d/1ND1HiS9-zc3lUqzOGdUsF41Qt7MXIDi_/view?usp=sharing"
+                    }
+                ],
+                "tipo":"back"
+            },
+            {   
+                "id":4,
+                 "icon":{
+                    "name":"bootstrap",
+                    "type":"bootstrap"
+                },
+                "title":"Bootstrap",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"front"
+            },
+            {   
+                "id":5,
+                 "icon":{
+                    "name":"js",
+                    "type":"bootstrap"
+                },
+                "title":"JavaScript",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"front"
+            },
+            {   
+                "id":6,
+                 "icon":{
+                    "name":"python",
+                    "type":"bootstrap"
+                },
+                "title":"Python",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"back"
+            },
+            {   
+                "id":7,
+                "icon":{
+                    "name":"database",
+                    "type":"uikit"
+                },
+                "title":"MySQL",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"back"
+            },
+            {   
+                "id":8,
+                "icon":{
+                    "name":"uikit",
+                    "type":"uikit"
+                },
+                "title":"UI Kit",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"front"
+            },
+            {   
+                "id":9,
+                "icon":{
+                    "name":"node",
+                    "type":"bootstrap"
+                },
+                "title":"Node.Js",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"back"
+            },
+            {   
+                "id":10,
+                "icon":{
+                    "name":"vuejs",
+                    "type":"bootstrap"
+                },
+                "title":"Vue.Js",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"front"
+            },
+            {   
+                "id":11,
+                "icon":{
+                    "name":"github",
+                    "type":"bootstrap"
+                },
+                "title":"GitHub",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"tool"
+            },
+            {   
+                "id":12,
+                "icon":{
+                    "name":"git",
+                    "type":"bootstrap"
+                },
+                "title":"Git",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"tool"
+            },
+            {   
+                "id":13,
+                "icon":{
+                    "name":"figma",
+                    "type":"bootstrap"
+                },
+                "title":"Figma",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"tool"
+            },
+            {   
+                "id":14,
+                "icon":{
+                    "name":"sass",
+                    "type":"bootstrap"
+                },
+                "title":"Sass",
+                "experiencia":"2 Ano e 2 Meses",
+                "certificados":[],
+                "tipo":"front"
+            }
+
+    ]
+}

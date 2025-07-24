@@ -4,7 +4,7 @@
 }
 
 .sobre-mim__container {
-  .contato__container {
+  & .contato__container {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -13,14 +13,14 @@
       var(--bs-border-color);
   }
 
-  .contato__container {
+   & .contato__container {
     .contato__content {
       width: 100%;
       display: flex;
       justify-content: space-between;
     }
 
-    .contato__content {
+    & .contato__content {
       .contato__contatos {
         gap: 1rem;
         display: flex;
@@ -28,7 +28,7 @@
         align-items: center;
       }
 
-      .contato__curriculo {
+      & .contato__curriculo {
         width: 50%;
         height: 100%;
       }

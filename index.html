@@ -28,18 +28,33 @@
 
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="assets/css/bgs.css">
-    <link rel="stylesheet" href="assets/css/font-size.css">
     <link rel="stylesheet" href="assets/css/intro.css">
+    <link rel="stylesheet" href="assets/css/font-size.css">
     <link rel="stylesheet" href="assets/css/sobremim.css">
     <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/all.css">
 
     <title>Portifólio / João Gabriel \ Dev FullStack</title>
 </head>
 
 <body class="bg-ocean text-light" style="overflow: hidden;">
 
+    <button class="btn bg-transparent border text-light d-inline-block" style="position:fixed" type="button" uk-toggle="target: #offcanvas-nav">Menu</button>
 
-    <section id="intro" class="container-fluid w-100 p-0" style="height:500px;">
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="#intro" uk-scroll="offset: 100">Intro</a></li>
+                <li><a href="#sobre_mim" uk-scroll="offset: 100">Apresentação</a></li>
+                <li><a href="#habilidades" uk-scroll="offset: 100">Habilidades</a></li>
+                <li><a href="#projetos" uk-scroll="offset: 100">Projetos</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <section id="intro" class="container-fluid w-100 p-0">
         <article class="row h-100 z-n1 bg-parallax"
             style="background-image: url(assets/imgs/parallax.png); background-position-x:right;">
             <div class="col-md-10 col-sm-12 text-light p-0">
@@ -49,28 +64,28 @@
                             class="mx-auto d-flex w-50 flex-wrap gap-2 justify-content-center uk-animation-fade uk-animation-slide-right uk-animation-duration-2">
                             <h1 class="uk-heading-divider text-light font-tecno"><span class="uk-text-justify">Prazer, eu sou o João</span></h1>
                             <h2 class="uk-heading-line uk-text-center w-100 mt-1 text-light font-valorant"><span
-                                    class="uk-text-bold font-sp">Dev FullStack</span></h2>
+                                    class="uk-text-bold">Dev FullStack</span></h2>
                         </div>
                     </div>
                 </div>
         </article>
     </section>
 
-    <section id="sobre_mim" class="sobre-mim__container container-fluid w-100 bg-light px-sm-5 py-sm-3" class="height:600px">
+    <section id="sobre_mim" class="sobre-mim__container container-fluid w-100 bg-light px-sm-5 py-md -3">
         <article class="row w-100 text-dark">
             <div class="col-md-7 col-sm-12 h-100 px-5">
                 <div class="font-tecno h4 text-secondary">
                     <div class="row justify-content-around">
+                         <h4 class="text-dark mx-5">Sobre Mim</h4>
                         <p>
-                            <h4 class="text-dark mx-5 font-valorant">Sobre Mim</h4>
                             Estudante de TI criativo em busca de oportunidade como programador, tenho conhecimento em
                             FullStack, incluindo HTML, CSS, JavaScript, PHP e Bootstrap. Desenvolvo uma plataforma gratuita
                             de estudos, neste projeto pratico e aprendo como lidar com problemas e usuários, meu objetivo é
                             apoiar estudantes independentes na área de programação, disponibilizando acesso a materiais e
                             atividades para o aperfeiçoamento de habilidades.
                         </p>
+                        
                         <p>
-                            <h4 class="text-dark mx-5 font-valorant">Objetivo</h4>
                             Integrar uma Equipe de desenvolvimento como programador, de forma que eu possa aplicar minhas
                             habilidades, em HTML, CSS, JavaScript, PHP e Bootstrap, para desenvolver ou manter aplicações
                             web.
@@ -99,7 +114,7 @@
                         <div class="contato__curriculo">
 
                             <a href="assets\Curriculo Joao Gabriel.pdf" target="_blank" class="uk-button-default bg-warning px-5 rounded d-flex align-content-center text-decoration-none py-md-3">
-                                <span class="my-auto mx-2 font-tecno h5">Baixar Cv</span>
+                                <span class="my-auto mx-2 h5">Baixar Cv</span>
                                 <i class="my-auto fa-solid fa-download"></i>
                             </a>
                             
@@ -119,34 +134,39 @@
             </article>
     </section>
 
-    <section id="habilidades" class="container-fluid bg-success" style="height:200px">
+    <section id="habilidades" class="container-fluid bg-success">
         <article class="row bg-parallax"
             style="background-image: url(assets/imgs/paisagem.jpeg); background-repeat: no-repeat; background-size: cover;">
             
             <div class="col-md-5 col-sm-12 h-100 px-5 justify-content-center">
-                <div id="resumo_skills" class="bg-dark my-5 rounded" style="min-height: 300px;">
+                <div id="skills__display" class="bg-dark my-5 rounded" style="min-height: 300px;">
                     <p class="text-light bg-secondary p-3 rounded-top h3">Habilidades</p>
                     <p class="text-light px-3 text-center">Escolha uma habilidade</p>
                 </div>
             </div>
 
             <div class="col-md-7 col-sm-12 bg-intro-right d-flex justify-content-center" style="overflow-y:hidden">
-                <div uk-filter="target: .js-filter" class="col-12 rounded my-4"
-                    style="overflow-y:hidden; height:400px; background-color:rgba(255, 255, 255,0.8);">
+                <div uk-filter="target: .js-filter" class="col-12 rounded my-4" style="overflow-y:hidden; height:400px; background-color:rgba(255, 255, 255,0.8);">
 
                     <div class="uk-grid-divider uk-child-width-auto bg-secondary px-5 py-2" uk-grid>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li class="uk-active" uk-filter-control><a href="#" class="text-light  px-4">Todos</a>
+                                <li class="uk-active" uk-filter-control>
+                                    <a href="#" class="text-light px-4">Todos</a>
                                 </li>
                             </ul>
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li uk-filter-control="filter: [id='front'],[class='front']; group: data-color"><a
-                                        href="#" class="text-light px-4">Front-End</a></li>
-                                <li uk-filter-control="filter: [id='back']; group: data-color"><a href="#"
-                                        class="text-light px-4">Back-end</a></li>
+                                <li uk-filter-control="filter: [id='front'],[class='front']; group: data-color">
+                                    <a href="#" class="text-light px-4">Front-End</a>
+                                </li>
+                                <li uk-filter-control="filter: [id='back']; group: data-color">
+                                    <a href="#" class="text-light px-4">Back-end</a>
+                                </li>
+                                <li uk-filter-control="filter: [id='tool']; group: data-color">
+                                    <a href="#" class="text-light px-4">Tools</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -154,95 +174,9 @@
                     <div class="w-100 h-100 p-3" >
                         <div class="w-100 h-100 pb-5 px-3" style="overflow-y:scroll">
                             <ul class="js-filter uk-child-width-1-2 uk-child-width-1-4@m uk-text-center"
-                                uk-grid="masonry: true">
-                                <li id="front" data-size="small">
-                                    <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="html">
-                                        <canvas width="40" height="60"></canvas>
-                                        <div class="uk-position-center h1 pb-3"><i
-                                                class="fa-brands fa-html5 fa-2xl uk-text-secondary"></i></div>
-                                        <div class="uk-position-bottom-center h4 p-1">HTML5</div>
-                                    </div>
-                                </li>
-                                <li id="front" data-size="small">
-                                    <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="css">
-                                        <canvas width="40" height="60"></canvas>
-                                        <div class="uk-position-center h1 pb-3"><i
-                                                class="fa-brands fa-css3 fa-2xl uk-text-secondary"></i></div>
-                                        <div class="uk-position-bottom-center p-1 h4">CSS3</div>
-                                    </div>
-                                </li>
-
-                                <li id="front" data-size="small">
-                                    <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded"
-                                        id="bootstrap">
-                                        <canvas width="40" height="60"></canvas>
-                                        <div class="uk-position-center h1 pb-3"><i
-                                                class="fa-brands fa-bootstrap fa-2xl uk-text-secondary"></i></div>
-                                        <div class="uk-position-bottom-center h4 p-1">Bootstrap</div>
-                                    </div>
-                                </li>
-
-                                <li id="back" data-size="small">
-                                    <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="php">
-                                        <canvas width="40" height="60"></canvas>
-                                        <div class="uk-position-center h1 pb-3"><i
-                                                class="fa-brands fa-php fa-2xl uk-text-secondary"></i></div>
-                                        <div class="uk-position-bottom-center h4 p-1">PHP</div>
-                                    </div>
-                                </li>
-
-                                <li id="back" class="front" data-size="small">
-                                    <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded"
-                                        id="javascript" onclick="skill(this)">
-                                        <canvas width="40" height="60"></canvas>
-                                        <div class="uk-position-center h1 pb-3"><i
-                                                class="fa-brands fa-js fa-2xl uk-text-secondary"></i></div>
-                                        <div class="uk-position-bottom-center h4 p-1">JavaScript</div>
-                                    </div>
-                                </li>
-
-                                <li id="back" data-size="small">
-                                    <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded"
-                                        id="python">
-                                        <canvas width="40" height="60"></canvas>
-                                        <div class="uk-position-center h1 pb-3"><i
-                                                class="fa-brands fa-python fa-2xl uk-text-secondary"></i></div>
-                                        <div class="uk-position-bottom-center h4 p-1">Python</div>
-                                    </div>
-                                </li>
-
-                                <li id="back" data-size="small">
-                                    <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded" id="sql">
-                                        <canvas width="40" height="60"></canvas>
-                                        <div class="uk-position-center pb-3">
-                                            <p class="uk-text-medium uk-text-secondary" uk-icon="icon: database; ratio:3"></p>
-                                        </div>
-                                        <div class="uk-position-bottom-center h4 p-1">MySQL</div>
-                                    </div>
-                                </li>
-
-                                <li id="front" data-size="small">
-                                    <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded"
-                                        id="uikit">
-                                        <canvas width="40" height="60"></canvas>
-                                        <div class="uk-position-center pb-3">
-                                            <p class="uk-text-medium uk-text-secondary" uk-icon="icon: uikit; ratio:3"></p>
-                                        </div>
-                                        <div class="uk-position-bottom-center h4 p-1">UIKit</div>
-                                    </div>
-                                </li>
-
-                                <li id="back" data-size="small">
-                                    <div class="uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded"
-                                        id="csharp">
-                                        <canvas width="40" height="60"></canvas>
-                                        <div class="uk-position-center h1 pb-3"><i
-                                                class="fa-brands fa-c  fa-xl uk-text-secondary"></i><i
-                                                class="fa-brands fa-hashtag uk-text-secondary"></i></div>
-                                        <div class="uk-position-bottom-center h4 p-1">C#</div>
-                                    </div>
-                                </li>
-
+                                uk-grid="masonry: true" id='skill__cards'>
+                                
+                                
                             </ul>
                         </div>
                     </div>
@@ -250,6 +184,11 @@
                 </div>
             </div>
         </article>
+    </section>
+
+    <section id='projetos'>
+        <h1 class="text-light">Em Breve</h1>
+        <h2 class="text-light">Projetos</h2>
     </section>
 
     <div>
@@ -263,13 +202,10 @@
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit-icons.min.js"></script>
 
         <!--Jquery UI Js-->
-        <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"
-            integrity="sha256-u0L8aA6Ev3bY2HI4y0CAyr9H8FRWgX4hZ9+K7C2nzdc=" crossorigin="anonymous"></script>
-
         <script src="https://code.jquery.com/jquery-3.7.1.js"
             integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
-        <script src="assets/js/habilidades.js"></script>
+        <script src="assets/js/SkillDisplay.js"></script>
+        <script src="assets/js/cardBuilder.js"></script>
     </div>
 
 </body>
