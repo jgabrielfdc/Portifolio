@@ -1,0 +1,67 @@
+.biografia__content{
+    height:100%;
+    margin:0px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.biografia__texto{
+    color:#000;
+    display:flex;
+    height:100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.biografia__apresentacao{
+    border-bottom: 2px solid #a7a7a7;
+}
+.buttons{
+    width: 100%;
+    height:40%;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding:5px 0px;
+    justify-content: space-around;
+}
+
+.buttons__container{
+    display:flex;
+    justify-content: space-evenly;
+    padding:10px 0px;
+}
+
+.button__option{
+    color:#000;
+    display: inline-block;
+    padding:15px;
+    border-radius:50px;
+    color:#fff;
+}
+
+#whatsapp{
+    background-color: #5aac07;
+}
+#linkedin{
+    background-color: #4e83e6;
+}
+#github{
+    background-color: #000;
+}
+
+.button{
+    padding:5px 25px;
+    display: inline-flex;
+    outline:1px solid #adacace2;
+    align-self: center;
+    transition: all 0.3s;
+    border-radius:10px;
+}
+
+.button:hover{
+    transition:0.3s all;
+    background-color:#fdaadd;
+}
