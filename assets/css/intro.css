@@ -1,47 +1,51 @@
-/*?=-=-=-=-=-=-= Introdução =-=-=-=-=-=-=-*/
+#intro__container {
+  background: linear-gradient(to right, #2F2C40, #454259, #284c69, #7686A6);
 
-@media(max-width:600px){
-    .bg-intro-left{
-      background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
+  & h1,
+  h2 {
+    color: #f7f7f7;
+  }
+
+  & .intro__content {
+    height: max-content;
+    width: 83.33%;
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+
+    & .title__container {
+      display: flex;
+      border-bottom: 0.12em solid #f7f7f7;
+      justify-content: center;
+
+      & h1 {
+        width: 100%;
+        text-align: center;
+      }
     }
-    .bg-intro-right{
-      background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
-    }
-    .img-hidden{
-      display: none;
+
+    & .subtitle__container {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      & .subtitle__content {
+        width: 60%;
+
+        & h2 {
+          margin: 0px;
+          padding: 0px;
+          text-align: center;
+        }
+      }
+
+      & .v-line {
+        width: 15%;
+        content: "";
+        border: 0.06em solid #fff;
+      }
     }
   }
-@media (min-width:600px){
-    .bg-intro-left{
-      background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
-    }
-    .bg-intro-right{
-      background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
-    }
-    .img-hidden{
-      display: none;
-    }
-  }
-@media(min-width:768px){
-    .bg-intro-left{
-      background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
-    }
-    .bg-intro-right{
-      background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
-    }
-  
-    .img-hidden{
-      display: none;
-    }
-  }
-@media(min-width:992px){
-    .bg-intro-left{
-      background:linear-gradient(to right,#2F2C40,#454259,rgba(40, 76, 105),rgb(46, 78, 104),rgba(118, 134, 166, 0.7),transparent,transparent) !important;
-    }
-    .bg-intro-right{
-      background:linear-gradient(to left,#2F2C40,#454259,rgba(40, 76, 105),rgb(46, 78, 104),rgba(118, 134, 166, 0.7),transparent,transparent) !important;
-    }
-    .img-hidden{
-      display:inline-block;
-    }
-  }
+}

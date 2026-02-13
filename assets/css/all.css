@@ -1,0 +1,21 @@
+section{
+    height:500px;
+}
+
+#intro__container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*?=-=-=-=-=-=-= Fontes =-=-=-=-=-=-=-*/
+
+h1{
+  font-size:2.5em;
+  font-family: BreeSerif; 
+}
+
+h2{
+  font-size: clamp(1.3em,20px,0.5em);
+  font-family: Tahoma, sans-serif;
+}

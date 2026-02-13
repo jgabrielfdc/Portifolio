@@ -25,18 +25,14 @@
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
 
-
     <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="assets/css/bgs.css">
-    <link rel="stylesheet" href="assets/css/font-size.css">
-    <link rel="stylesheet" href="assets/css/intro.css">
-    <link rel="stylesheet" href="assets/css/sobremim.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/all.css">
 
-    <title>Portifólio / João Gabriel \ Dev FullStack</title>
+    <title>| Portifólio | João Gabriel |</title>
 </head>
 
-<body class="bg-ocean text-light" style="overflow: hidden;">
+<body class="bg-ocean text-light" style="overflow-x: hidden;">
 
 
     <section id="intro" class="container-fluid w-100 p-0" style="height:500px;">
@@ -98,7 +94,7 @@
                         </div>
                         <div class="contato__curriculo">
 
-                            <a href="assets\Curriculo Joao Gabriel.pdf" target="_blank" class="uk-button-default bg-warning px-5 rounded d-flex align-content-center text-decoration-none py-md-3">
+                            <a href="assets/Curriculo Jg.pdf" target="_blank" class="uk-button-default bg-warning px-5 rounded d-flex align-content-center text-decoration-none py-md-3">
                                 <span class="my-auto mx-2 font-tecno h5">Baixar Cv</span>
                                 <i class="my-auto fa-solid fa-download"></i>
                             </a>
@@ -120,10 +116,11 @@
     </section>
 
     <section id="habilidades" class="container-fluid bg-success" style="height:200px">
-        <article class="row bg-parallax">
+        <article class="row bg-parallax"
+            style="background-image: url(assets/imgs/paisagem.jpeg); background-repeat: no-repeat; background-size: cover;">
             
             <div class="col-md-5 col-sm-12 h-100 px-5 justify-content-center">
-                <div id="display__skills" class="bg-dark my-5 rounded" style="min-height: 300px;">
+                <div id="resumo_skills" class="bg-dark my-5 rounded" style="min-height: 300px;">
                     <p class="text-light bg-secondary p-3 rounded-top h3">Habilidades</p>
                     <p class="text-light px-3 text-center">Escolha uma habilidade</p>
                 </div>
@@ -262,13 +259,10 @@
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit-icons.min.js"></script>
 
         <!--Jquery UI Js-->
-        <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"
-            integrity="sha256-u0L8aA6Ev3bY2HI4y0CAyr9H8FRWgX4hZ9+K7C2nzdc=" crossorigin="anonymous"></script>
-
         <script src="https://code.jquery.com/jquery-3.7.1.js"
-            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-        <script src="assets/js/habilidades.js"></script>
+       <script src="assets/js/Components.js"></script>
     </div>
 
 </body>

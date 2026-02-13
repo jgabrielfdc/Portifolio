@@ -1,0 +1,19 @@
+{
+    "contacts":[
+        {
+            "name":"whatsapp",
+            "color":"#5aac07",
+            "link":"https://wa.me/5562985854951?text=Olá"
+        },
+        {
+            "name":"linkedin",
+            "color":"#4e83e6",
+            "link":"http://www.linkedin.com/in/jgabrielfdc"
+        },
+        {
+            "name":"github",
+            "color":"#000",
+            "link":"https://github.com/jgabrielfdc"
+        }
+    ]
+}
