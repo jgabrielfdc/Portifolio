@@ -1,10 +1,14 @@
-.biografia__content{
-    height:100%;
-    margin:0px;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
+#biografia__container{
+    & .biografia__content{
+        height:100%;
+        margin:0px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
 }
+
+
 
 .biografia__texto{
     color:#000;
