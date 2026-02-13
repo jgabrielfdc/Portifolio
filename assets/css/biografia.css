@@ -30,7 +30,8 @@
 
 .buttons__container{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:17.36%;
     padding:10px 0px;
 }
 
@@ -40,28 +41,29 @@
     padding:15px;
     border-radius:50px;
     color:#fff;
-}
 
-#whatsapp{
-    background-color: #5aac07;
-}
-#linkedin{
-    background-color: #4e83e6;
-}
-#github{
-    background-color: #000;
+    & a{
+        text-decoration:n;
+        color:#fff;
+    }
 }
 
 .button{
     padding:5px 25px;
+    width:clamp(250px,69.4%,400px);
     display: inline-flex;
-    outline:1px solid #adacace2;
     align-self: center;
     transition: all 0.3s;
     border-radius:10px;
+    & span{
+        margin:0px;
+        padding:0px;
+        width:100%;
+        font-size:1.68em;
+    }
 }
 
 .button:hover{
     transition:0.3s all;
-    background-color:#fdaadd;
+    background-color:#f0942a;
 }

@@ -2,21 +2,20 @@ section{
     height:500px;
 }
 
-/*?=-=-=-=-=-=-= Backgrounds =-=-=-=-=-=-=-*/
-.bg-parallax{
-  background-repeat: repeat-x;
-   background-size:contain;
-     background-attachment: fixed;
+#intro__container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bg-md-ocean{
-  background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6,#7686a600);
-}
-.bg-sm-ocean{
-  background:linear-gradient(to right,#2F2C40,#454259	,#284c69,#7686A6);
+/*?=-=-=-=-=-=-= Fontes =-=-=-=-=-=-=-*/
+
+h1{
+  font-size:2.5em;
+  font-family: BreeSerif; 
 }
 
-.text-aqua{
-  color:aqua;
-  transition:0.5s all;
+h2{
+  font-size: clamp(1.3em,20px,0.5em);
+  font-family: Tahoma, sans-serif;
 }

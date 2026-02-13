@@ -25,7 +25,6 @@
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
 
-
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/all.css">
@@ -33,9 +32,9 @@
     <title>| Portifólio | João Gabriel |</title>
 </head>
 
-<body class="bg-ocean text-light" style="overflow: hidden;">
+<body class="text-light">
 
-    <button class="btn bg-transparent border text-light d-inline-block" style="position:fixed" type="button" uk-toggle="target: #offcanvas-nav">Menu</button>
+    <!-- <button class="btn bg-transparent border text-light d-inline-block" style="position:fixed" type="button" uk-toggle="target: #offcanvas-nav">Menu</button>
 
     <div id="offcanvas-nav" uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar">
@@ -48,68 +47,21 @@
             </ul>
 
         </div>
-    </div>
+    </div> -->
 
-    <section id="intro__container" class="container-fluid intro__container">     
+    <section id="intro__container">
+             
     </section>
     
-    <section id="biografia__container" class="container-fluid biografia__container">
+    <section id="biografia__container">
         
     </section>
     
-    <section id="habilidades" class="container-fluid bg-success">
-        <article class="row bg-parallax"
-            style="background-image: url(assets/imgs/paisagem.jpeg); background-repeat: no-repeat; background-size: cover;">
-            
-            <div class="col-md-5 col-sm-12 h-100 px-5 justify-content-center">
-                <div id="skills__display" class="bg-dark my-5 rounded" style="min-height: 300px;">
-                    <p class="text-light bg-secondary p-3 rounded-top h3">Habilidades</p>
-                    <p class="text-light px-3 text-center">Escolha uma habilidade</p>
-                </div>
-            </div>
-
-            <div class="col-md-7 col-sm-12 bg-intro-right d-flex justify-content-center" style="overflow-y:hidden">
-                <div uk-filter="target: .js-filter" class="col-12 rounded my-4" style="overflow-y:hidden; height:400px; background-color:rgba(255, 255, 255,0.8);">
-
-                    <div class="uk-grid-divider uk-child-width-auto bg-secondary px-5 py-2" uk-grid>
-                        <div>
-                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li class="uk-active" uk-filter-control>
-                                    <a href="#" class="text-light px-4">Todos</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li uk-filter-control="filter: [id='front'],[class='front']; group: data-color">
-                                    <a href="#" class="text-light px-4">Front-End</a>
-                                </li>
-                                <li uk-filter-control="filter: [id='back']; group: data-color">
-                                    <a href="#" class="text-light px-4">Back-end</a>
-                                </li>
-                                <li uk-filter-control="filter: [id='tool']; group: data-color">
-                                    <a href="#" class="text-light px-4">Tools</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="w-100 h-100 p-3" >
-                        <div class="w-100 h-100 pb-5 px-3" style="overflow-y:scroll">
-                            <ul class="js-filter uk-child-width-1-2 uk-child-width-1-4@m uk-text-center"
-                                uk-grid="masonry: true" id='skill__cards'>
-                                
-                                
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </article>
+    <section id="skills__container">
+       
     </section>
 
-    <section id='projetos'>
+    <section id='projcts__container'>
         <h1 class="text-light">Em Breve</h1>
         <h2 class="text-light">Projetos</h2>
     </section>
@@ -128,8 +80,6 @@
         <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-        <script src="assets/js/SkillDisplay.js"></script>
-        <script src="assets/js/cardBuilder.js"></script>
        <script src="assets/js/Components.js"></script>
     </div>
 

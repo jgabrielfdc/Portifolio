@@ -1,0 +1,20 @@
+#skills__container{
+    background-color: turquoise;
+    & .skills__content{
+        padding:0px;
+        background-color: aquamarine;
+        & #skills__display{
+            background-color:azure;
+            min-width: 300px;
+            max-width: 650px;
+            @media (max-width: 485px) {
+                width:350px;
+            }
+        }
+    }
+
+    & .card__group{
+        background:#ebebeb;
+    }
+        
+}
