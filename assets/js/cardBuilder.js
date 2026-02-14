@@ -46,10 +46,11 @@ $(document).ready(function () {
     $(cardBody).append(cardCanvas).append(cardContent).append(cardTitle);
 
     $(itemList).append(cardBody);
+    
     $(itemList).on("click",({currentTarget})=>{
-        let currentTargetId=$(currentTarget).children()[0].id;
+      let currentTargetId=$($(currentTarget).children()[0]).attr('id');
 
-        findSkill(currentTargetId)
+      findSkill(currentTargetId)
     });
 
     $("#skill__cards").append(itemList);

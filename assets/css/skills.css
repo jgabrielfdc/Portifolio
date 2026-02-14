@@ -1,20 +1,85 @@
 #skills__container{
-    background-color: turquoise;
-    & .skills__content{
-        padding:0px;
-        background-color: aquamarine;
-        & #skills__display{
-            background-color:azure;
-            min-width: 300px;
-            max-width: 650px;
-            @media (max-width: 485px) {
-                width:350px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#f44;
+    @media(min-width: 1200px){
+        flex-direction: row;
+    }
+    @media(max-width: 1199.8px){
+        flex-direction: column;
+    }
+    & .display__container{
+        background:#ebebeb;
+        outline:1px solid #000;
+        @media(min-width: 1200px){
+            background-color: #09ff00;
+            width:50%;
+            flex-direction: row;
+        }
+        @media(max-width: 1199.8px){
+            background-color: #fffb00;
+            flex-direction: column;
+            width:100%
+        }
+
+        & #display{
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: var(--bs-dark);
+            margin:15px;
+            display:flex;
+            flex-direction: column;
+
+            & .skill__name{
+                background-color:var(--bs-secondary);
+                padding:15px 15px 0px 15px;
+                & h4{
+                    color:var(--bs-light);
+                    display:inline-block;
+                    font-size: 1.5em;
+                    font-weight: 700;
+                }
+            }
+            & .skill__description{
+                display: flex;
+                flex-direction: column;
+                padding:15px;
+                gap:15px;
+                min-height: 150px;
+                & h4{
+                    color:var(--bs-light);
+                }
+                & .skill__item{
+                    margin:0px;
+                    & span{
+                        font-size:1.2em;
+                    }
+                    & #display__certificados{
+                        & li a{
+                            font-size:1.3em;
+                        }
+                        & h4{
+                            color:var(--bs-light);
+                            font-size:1.35em;
+                        }
+                    }
+                }
             }
         }
     }
 
     & .card__group{
         background:#ebebeb;
+        outline:1px solid #000;
+        @media(min-width: 1200px){
+            background-color: #09ff00;
+            width:50%;
+        }
+        @media(max-width: 1199.8px){
+            background-color: #00fff2;
+            width:100%
+        }
+
     }
         
 }

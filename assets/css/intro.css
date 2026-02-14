@@ -7,8 +7,10 @@
   }
 
   & .intro__content {
+    padding:18.75% 6.94%;
+    outline: 1px solid #000;
     height: max-content;
-    width: 83.33%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap:1.5em;

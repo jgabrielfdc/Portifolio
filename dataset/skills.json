@@ -7,7 +7,7 @@
                     "type":"bootstrap"
                 },
                 "title":"HTML",
-                "experiencia":"2 Anos e 8 Meses",
+                "experience":"2023-08-19",
                 "certificados":[
                 {
                         "title":"Certificado Web Completo",
@@ -28,7 +28,7 @@
                     "name":"css3",
                     "type":"bootstrap"
                 },
-                "experiencia":"2 Anos e 8 Meses",
+                "experience":"2023-08-27",
                 "certificados":[
                     {
                         "title":"Certificado Web Completo",
@@ -48,7 +48,7 @@
                     "type":"bootstrap"
                 },
                 "title":"PHP",
-                "experiencia":"1 Ano e 5 Meses",
+                "experience":"2024-04-23",
                 "certificados":[
                     {
                         "title":"Certificado Web Completo",
@@ -68,7 +68,7 @@
                     "type":"bootstrap"
                 },
                 "title":"Bootstrap",
-                "experiencia":"2 Ano e 2 Meses",
+                "experience":"2023-10-05",
                 "certificados":[],
                 "tipo":"front"
             },
@@ -79,7 +79,7 @@
                     "type":"bootstrap"
                 },
                 "title":"JavaScript",
-                "experiencia":"2 Ano e 2 Meses",
+                "experience":"2024-02-25",
                 "certificados":[],
                 "tipo":"front"
             },
@@ -90,7 +90,7 @@
                     "type":"bootstrap"
                 },
                 "title":"Python",
-                "experiencia":"2 Ano e 2 Meses",
+                "experience":"2024-08-21",
                 "certificados":[],
                 "tipo":"back"
             },
@@ -101,7 +101,7 @@
                     "type":"uikit"
                 },
                 "title":"MySQL",
-                "experiencia":"2 Ano e 2 Meses",
+                "experience":"2024-08-19",
                 "certificados":[],
                 "tipo":"back"
             },
@@ -112,7 +112,7 @@
                     "type":"uikit"
                 },
                 "title":"UI Kit",
-                "experiencia":"2 Ano e 2 Meses",
+                "experience":"2025-03-05",
                 "certificados":[],
                 "tipo":"front"
             },
@@ -123,7 +123,7 @@
                     "type":"bootstrap"
                 },
                 "title":"Node.Js",
-                "experiencia":"2 Ano e 2 Meses",
+                "experience":"2025-07-25",
                 "certificados":[],
                 "tipo":"back"
             },
@@ -134,7 +134,7 @@
                     "type":"bootstrap"
                 },
                 "title":"Vue.Js",
-                "experiencia":"2 Ano e 2 Meses",
+                "experience":"2025-09-29",
                 "certificados":[],
                 "tipo":"front"
             },
@@ -145,7 +145,7 @@
                     "type":"bootstrap"
                 },
                 "title":"GitHub",
-                "experiencia":"2 Ano e 2 Meses",
+                "experience":"2023-09-17",
                 "certificados":[],
                 "tipo":"tool"
             },
@@ -156,7 +156,7 @@
                     "type":"bootstrap"
                 },
                 "title":"Git",
-                "experiencia":"2 Ano e 2 Meses",
+                "experience":"2023-09-16",
                 "certificados":[],
                 "tipo":"tool"
             },
@@ -167,21 +167,9 @@
                     "type":"bootstrap"
                 },
                 "title":"Figma",
-                "experiencia":"2 Ano e 2 Meses",
+                "experience":"2023-06-24",
                 "certificados":[],
                 "tipo":"tool"
-            },
-            {   
-                "id":14,
-                "icon":{
-                    "name":"sass",
-                    "type":"bootstrap"
-                },
-                "title":"Sass",
-                "experiencia":"2 Ano e 2 Meses",
-                "certificados":[],
-                "tipo":"front"
             }
-
     ]
 }
