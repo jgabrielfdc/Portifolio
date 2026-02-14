@@ -7,7 +7,6 @@ async function findSkill(id){
     $("#display").load("assets/components/DisplayContainer.html",()=>{
         displaySkills(skillArray[0])
     });
-    
 }
 
 function getExperiencePeriod(dataInput){
