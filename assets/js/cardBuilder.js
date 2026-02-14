@@ -15,8 +15,8 @@ $(document).ready(function () {
     let cardIcon = document.createElement("div");
     let cardTitle = document.createElement("div");
 
-    $(itemList).attr("data-size", "small");
-    $(itemList).attr("class", "uk-first-column");
+    // $(itemList).attr("data-size", "small");
+    // $(itemList).attr("class", "uk-first-column");
     $(itemList).attr("id", tipo);
 
     $(cardBody).addClass(

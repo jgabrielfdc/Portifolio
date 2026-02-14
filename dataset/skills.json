@@ -85,17 +85,6 @@
             },
             {   
                 "id":6,
-                 "icon":{
-                    "name":"python",
-                    "type":"bootstrap"
-                },
-                "title":"Python",
-                "experience":"2024-08-21",
-                "certificados":[],
-                "tipo":"back"
-            },
-            {   
-                "id":7,
                 "icon":{
                     "name":"database",
                     "type":"uikit"
@@ -106,7 +95,7 @@
                 "tipo":"back"
             },
             {   
-                "id":8,
+                "id":7,
                 "icon":{
                     "name":"uikit",
                     "type":"uikit"
@@ -117,18 +106,7 @@
                 "tipo":"front"
             },
             {   
-                "id":9,
-                "icon":{
-                    "name":"node",
-                    "type":"bootstrap"
-                },
-                "title":"Node.Js",
-                "experience":"2025-07-25",
-                "certificados":[],
-                "tipo":"back"
-            },
-            {   
-                "id":10,
+                "id":8,
                 "icon":{
                     "name":"vuejs",
                     "type":"bootstrap"
@@ -139,7 +117,7 @@
                 "tipo":"front"
             },
             {   
-                "id":11,
+                "id":9,
                 "icon":{
                     "name":"github",
                     "type":"bootstrap"
@@ -150,7 +128,7 @@
                 "tipo":"tool"
             },
             {   
-                "id":12,
+                "id":10,
                 "icon":{
                     "name":"git",
                     "type":"bootstrap"
@@ -161,7 +139,7 @@
                 "tipo":"tool"
             },
             {   
-                "id":13,
+                "id":11,
                 "icon":{
                     "name":"figma",
                     "type":"bootstrap"
@@ -170,6 +148,17 @@
                 "experience":"2023-06-24",
                 "certificados":[],
                 "tipo":"tool"
+            },
+            {   
+                "id":12,
+                "icon":{
+                    "name":"laravel",
+                    "type":"bootstrap"
+                },
+                "title":"Laravel",
+                "experience":"2025-05-22",
+                "certificados":[],
+                "tipo":"back"
             }
     ]
 }
