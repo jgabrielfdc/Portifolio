@@ -1,8 +1,5 @@
 #skills__container{
     display: flex;
-    max-height:500px;
-    min-height: 400px;
-    overflow: hidden;
     justify-content: space-around;
     @media(min-width: 1200px){
         flex-direction: row;
@@ -12,7 +9,7 @@
     }
     & .display__container{
         background:#ebebeb;
-        outline:1px solid #000;
+        
         @media(min-width: 1200px){
             background-color: #09ff00;
             width:50%;
@@ -73,6 +70,7 @@
     & .card__group{
         padding:0px;
         background:#ebebeb;
+          
         & > div{
             padding:0px;
             margin:0px;
@@ -85,13 +83,86 @@
             width:100%
         }
         & .categories__group{
-            outline: 1px solid #000;
             width: 100%;
             display: flex;
             height:100%;
+            padding:15px 0px;
             align-items: center;
             margin:0px !important;
             background-color: var(--bs-secondary);
+            @media(min-width: 688px){
+                flex-direction: row;
+                gap:25px;
+            }
+            @media(max-width: 687px){
+                flex-direction: column;
+            }
+            & .category__item{
+                display: flex;
+                height:100%;
+                width:100%;
+                min-height:39.29px;
+                &#category__options{
+                    & ul{
+                        @media(min-width: 688px){
+                            justify-content: left;
+                        }
+                    }
+                }
+
+                &#all__button{
+                    width:25%;
+                    @media(max-width: 688px){
+                        padding-bottom:10px;
+                        border-width: 0px 0px 2px 0px;
+                        border-color: var(--bs-light);
+                        border-style: solid;
+                    }
+                    @media(min-width: 687px){
+                        border-width: 0px 2px 0px 0px;
+                        border-color: var(--bs-light);
+                        border-style: solid;
+                    }
+                }
+                @media(max-width: 688px){
+                    justify-content: space-between;
+                }
+                @media(min-width: 687px){
+                    justify-content: center;
+                }
+                
+                & ul{
+                    display:flex;
+                    padding:0px 10px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin:0px auto;
+                    gap:1em; 
+
+                    & li{
+                        display: inline-block;
+                        padding:0px;
+                        margin:0px;
+                        /* outline:1px solid #fff; */
+                        & a{
+                            height:100%;
+                            width:100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content:center ;
+                            font-weight: 600;
+                            color:var(--bs-light);
+                            margin:0px;
+                            &:hover{
+                                color:var(--bs-light);
+                                text-decoration: none;
+                                background-color:color-mix(in srgb, var(--bs-primary) 80%, var(--bs-dark) 20%);
+                                transform:scale(105%);
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         & .skill__list {
