@@ -2,7 +2,7 @@
     "projects":[
         {
             "name":"Jogo De Cozinha",
-            "description":"Jogo Point-and-Click de gerenciamento de uma lanchonete, criado para praticar as tecnologoas nativas do front-end e aprofundar o conhecimento em javascript",
+            "description":"Simulador point-and-click de gerenciamento de lanchonete focado no domínio de HTML5, CSS3 e JavaScript puro. Projeto de engenharia front-end para praticar lógica de estado, manipulação de DOM e performance sem frameworks",
             "image":"https://res.cloudinary.com/dl2y8vzoq/image/upload/v1773105439/Captura_de_tela_2026-03-09_214716_doox6g.png",
             "resources":[
                 {
