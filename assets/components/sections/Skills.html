@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="assets/css/skills.css" />
 
-  <div class="display__container">
+  <div class="display__container fade-out">
     <div id="display">
         <span class="skill__name">
             <h4>Habilidades</h4>
@@ -11,7 +11,7 @@
     </div>
   </div>
 
-  <div class="card__group">
+  <div class="card__group fade-out">
     <div uk-filter="target: .js-filter" class="bg-dark">
       
       <div class="categories__group">
@@ -49,6 +49,42 @@
       </div>
     </div>
   </div>
+<script>
+  // let intersectionConfig={};
+  // if(window.innerWidth>=476){
+  //   intersectionConfig={
+  //     threshold:0.2
+  //   };
+  // }else{
+  //   intersectionConfig={
+  //     threshold:1
+  //   };
+  // }
 
-<script src="assets/js/SkillDisplay.js"></script>
+  const section=$('#skills__container')[0];
+  const observer = new IntersectionObserver((entries)=>{
+      // $(section).addClass('fade-out')
+      let {target,isIntersecting}=entries[0];
+      if(isIntersecting){
+          Array.from(target.children).forEach((item)=>{
+              if(item.tagName=='DIV'){
+                  $(item).addClass('fade-in')
+              }
+          })
+          // $(target).addClass('fade-in')
+      }else{
+        $("#display").html('<span class="skill__name"><h4>Habilidades</h4></span><span class="skill__description"><h4>Escolha uma habilidade</h4></span>');
+          Array.from(target.children).forEach((item)=>{
+              if(item.tagName=='DIV'){
+                  $(item).removeClass('fade-in')
+              }
+          })
+      }
+  },{
+    threshold:0.2
+  });
+
+  observer.observe(section)
+</script>
+<script src="assets/js/SkillDisplay.js" defer></script>
 <script src="assets/js/cardBuilder.js"></script>

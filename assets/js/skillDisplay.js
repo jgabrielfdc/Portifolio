@@ -9,32 +9,45 @@ async function findSkill(id){
     });
 }
 
-function getExperiencePeriod(dataInput){
+function getExperiencePeriod(dataInput) {
+    let dataInicio = new Date(dataInput);
+    let dataAtual = new Date();
 
-let dataInicio = new Date(dataInput);
-let dataAtual = new Date();
+    let anos = dataAtual.getFullYear() - dataInicio.getFullYear();
+    let meses = dataAtual.getMonth() - dataInicio.getMonth();
+    let dias = dataAtual.getDate() - dataInicio.getDate();
 
-let anos = dataAtual.getFullYear() - dataInicio.getFullYear();
-let meses = dataAtual.getMonth() - dataInicio.getMonth();
-let dias = dataAtual.getDate() - dataInicio.getDate();
+    // Ajuste de dias negativos (mês incompleto)
+    if (dias < 0) {
+        meses--;
+        let ultimoDiaMesAnterior = new Date(dataAtual.getFullYear(), dataAtual.getMonth(), 0).getDate();
+        dias += ultimoDiaMesAnterior;
+    }
 
-// Ajuste se o dia atual for menor que o dia de início (mês incompleto)
-if (dias < 0) {
-    meses--;
-}
+    // Ajuste de meses negativos (ano incompleto)
+    if (meses < 0) {
+        anos--;
+        meses += 12;
+    }
 
-// Ajuste se o mês atual for menor que o mês de início (ano incompleto)
-if (meses < 0) {
-    anos--;
-    meses += 12;
-}
+    // --- NOVA LÓGICA DE EXIBIÇÃO LIMPA ---
+    let partes = [];
 
-// Lógica de exibição dinâmica
-if (anos > 0) {
-    return `${anos} ${anos === 1 ? 'ano' : 'anos'} e ${meses} ${meses === 1 ? 'mês' : 'meses'}`;
-} else {
-    return `${meses} ${meses === 1 ? 'mês' : 'meses'}`;
-}
+    if (anos > 0) {
+        partes.push(`${anos} ${anos === 1 ? 'ano' : 'anos'}`);
+    }
+
+    if (meses > 0) {
+        partes.push(`${meses} ${meses === 1 ? 'mês' : 'meses'}`);
+    }
+
+    // Caso não tenha anos nem meses, mostra os dias
+    if (partes.length === 0) {
+        return `${dias} ${dias === 1 ? 'dia' : 'dias'}`;
+    }
+
+    // Junta as partes com " e " (ex: "1 ano e 2 meses" ou apenas "2 anos")
+    return partes.join(' e ');
 }
 
 function displaySkills({title, experience, certificados}){

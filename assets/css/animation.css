@@ -1,0 +1,10 @@
+.fade-out{
+    transform:translate(-100%);
+    opacity: 0;
+    transition:1s ease;
+}
+.fade-in{
+    transform:translate(0px);
+    opacity: 1;
+    transition:1s ease;
+}

@@ -1,0 +1,67 @@
+{
+    "projects":[
+        {
+            "name":"Jogo De Cozinha",
+            "description":"Jogo Point-and-Click de gerenciamento de uma lanchonete, criado para praticar as tecnologoas nativas do front-end e aprofundar o conhecimento em javascript",
+            "image":"https://res.cloudinary.com/dl2y8vzoq/image/upload/v1773105439/Captura_de_tela_2026-03-09_214716_doox6g.png",
+            "resources":[
+                {
+                    "name":"HTML",
+                    "icon":"html5",
+                    "skill_id":"html5-1"
+                },
+                {
+                    "name":"CSS",
+                    "icon":"css3",
+                    "skill_id":"css3-2"
+                },
+                {
+                    "name":"JavaScript",
+                    "icon":"js",
+                    "skill_id":"js-5"
+                }
+            ],
+            "demo_link":"https://project-cook.vercel.app",
+            "repository_link":"https://github.com/jgabrielfdc/Project_Cook"
+        },
+        {
+            "name":"Blog Ocupacional",
+            "description":"Esta plataforma centraliza a comunicação entre estudantes da área de Terapia Ocupacionao. O sistema foca na troca de ideias através de posts e compartilhamento de materiais.",
+            "image":"https://res.cloudinary.com/dl2y8vzoq/image/upload/v1773111074/imagem_2026-03-09_235109667_lcbri6.png",
+            "resources":[
+                {
+                    "name":"HTML",
+                    "icon":"html5",
+                    "skill_id":"html5-1"
+                },
+                {
+                    "name":"Bootstrap",
+                    "icon":"bootstrap",
+                    "skill_id":"bootstrap-4"
+                },
+                {
+                    "name":"JavaScript",
+                    "icon":"js",
+                    "skill_id":"js-5"
+                },
+                {
+                    "name":"MySQL",
+                    "icon":"",
+                    "skill_id":"database-6"
+                },
+                {
+                    "name":"Laravel",
+                    "icon":"laravel",
+                    "skill_id":"laravel-12"
+                },
+                {
+                    "name":"PHP",
+                    "icon":"php",
+                    "skill_id":"php-3"
+                }
+            ],
+            "demo_link":"",
+            "repository_link":"https://github.com/jgabrielfdc/blog_ocupacional"
+        }
+    ]
+}

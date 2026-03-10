@@ -22,7 +22,7 @@ $(document).ready(function () {
     $(cardBody).addClass(
       "uk-card uk-card-hover uk-card-default uk-card-body uk-border-rounded"
     );
-    $(cardBody).attr("id", `${title}-${id}`);
+    $(cardBody).attr("id", `${icon.name}-${id}`);
 
     $(cardCanvas).attr("width", 40);
     $(cardCanvas).attr("height", 60);

@@ -1,0 +1,206 @@
+/* --- Container do Carrossel --- */
+.carousel-container {
+    position: relative;
+    width: 95%; /* Largura responsiva */
+    max-width: 1000px; /* Largura máxima maior para cards modernos */
+    margin: 3rem auto; /* Centralizado com respiro vertical */
+    overflow: hidden; /* Esconde os slides fora da vista */
+    border-radius: 15px; /* Bordas suaves */
+    padding: 10px 0; /* Espaço para as sombras dos cards não cortarem */
+}
+
+/* A "faixa" que contém os slides */
+#carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Efeito suave de mola */
+    will-change: transform; /* Otimização de performance */
+}
+
+/* Cada Slide individual */
+.slide {
+    min-width: 100%; /* Ocupa 100% da largura do container */
+    padding: 20px 50px; /* Espaço interno para o card e botões de navegação */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Centraliza o card dentro do slide */
+}
+
+/* --- Estilização do Card de Projeto --- */
+.project-card {
+    background-color: #242424; /* Fundo do Card */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #333; /* Borda sutil */
+    width: 100%;
+    max-width: 800px; /* Largura máxima do card */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efeito Hover no Card */
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(255, 87, 51, 0.25); /* Sombra neon laranja sutil */
+    border-color: #ff5733; /* Borda laranja no hover */
+}
+
+/* Área da Imagem */
+.card-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 220px; /* Altura fixa para a área da imagem */
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre a área sem distorcer */
+    transition: transform 0.6s ease;
+}
+
+/* Zoom na imagem no hover do card */
+.project-card:hover .project-img {
+    transform: scale(1.08);
+}
+
+/* Conteúdo do Card */
+.card-content {
+    padding: 25px;
+    flex-grow: 1; /* Ocupa o espaço restante */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título do Projeto */
+.project-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+    border-left: 4px solid #ff5733; /* Detalhe laranja à esquerda */
+    padding-left: 12px;
+}
+
+/* --- Estilização das Badges de Tecnologia --- */
+.project-badges {
+    margin-bottom: 18px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6em 0.9em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.badge:hover {
+    transform: translateY(-2px);
+}
+
+/* Badge Principal (Laranja) */
+.tech-badge-main {
+    background-color: #ff5733 !important;
+    color: #fff;
+}
+
+/* Badges Secundárias (Cinza Escuro) */
+.tech-badge-sub {
+    background-color: #333 !important;
+    color: #b0b0b0;
+    border: 1px solid #444;
+}
+
+.badge i {
+    font-size: 0.9rem;
+}
+
+/* Descrição do Projeto */
+.project-description {
+    color: #b0b0b0;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    flex-grow: 1; /* Empurra os botões para o final */
+}
+
+/* Botões do Card (Live Demo e Repositório) */
+.card-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-card {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-live {
+    background-color: #ff5733;
+    color: #fff;
+}
+
+.btn-live:hover {
+    background-color: #e04e2e;
+    transform: scale(1.03);
+    color: #fff;
+}
+
+.btn-repo {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.btn-repo:hover {
+    background-color: #444;
+    border-color: #555;
+    transform: scale(1.03);
+    color: #fff;
+}
+
+/* --- Ajuste dos Botões de Navegação do Carrossel --- */
+.carousel-container .prev,
+.carousel-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background 0.3s ease, opacity 0.3s ease;
+    opacity: 0.6;
+    font-size: 1.2rem;
+}
+
+.carousel-container .prev:hover,
+.carousel-container .next:hover {
+    background: #ff5733; /* Cor de destaque ao passar o mouse */
+    opacity: 1;
+}
+
+.carousel-container .prev { left: 15px; }
+.carousel-container .next { right: 15px; }
