@@ -51,7 +51,7 @@ function imageDiv({image,name}){
 // Cria os Badges
 function createBadge({name,icon,skill_id}){
     const badge=document.createElement('a');
-    $(badge).attr('class','badge tech-badge-main');
+    $(badge).attr('class','badge tech-badge');
     $(badge).attr('href','#skills__container');
     $(badge).on('click',()=>{
         document.getElementById(skill_id).click();
